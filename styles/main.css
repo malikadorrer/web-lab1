@@ -1,6 +1,157 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+/* ==========================================
+   1. ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ И RESET (box-sizing)
+   ========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #1e40af;
+    --text-color: #1f2937;
+    --bg-color: #f3f4f6;
+    --card-bg: #ffffff;
+    --border-color: #e5e7eb;
+    --base-padding: 1.5rem;
+    --base-radius: 0.5rem;
+}
+
+/* Обнуление и безопасный расчет размеров */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+}
+
+/* ==========================================
+   2. БАЗОВЫЕ СТИЛИ СТРАНИЦЫ И ТЕКСТА
+   ========================================== */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0.015em;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    padding: 2rem 1rem;
+}
+
+/* Центрирование макро-контейнеров */
+header, nav, main, footer {
+    max-width: 800px;
+    margin: 0 auto 1.5rem auto;
+    background-color: var(--card-bg);
+    padding: var(--base-padding);
+    border-radius: var(--base-radius);
+    border: 1px solid var(--border-color);
+}
+
+/* ==========================================
+   3. ШАПКА И НАВИГАЦИЯ
+   ========================================== */
+header {
+    text-align: center;
+}
+
+header img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid var(--primary-color);
+}
+
+header h1 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* ==========================================
+   4. СЕКЦИИ И ЭЛЕМЕНТЫ ФОРМ
+   ========================================== */
+section {
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+fieldset {
+    border: 1px solid var(--border-color);
+    border-radius: var(--base-radius);
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+legend {
+    font-weight: 700;
+    color: var(--primary-color);
+    padding: 0 0.5rem;
+}
+
+div {
+    margin-bottom: 0.75rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    font-family: inherit;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* ==========================================
+   5. ПОДВАЛ (FOOTER)
+   ========================================== */
+footer {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #6b7280;
 }
