@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме / Информационная карточка</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+    <header>
+        <img src="https://via.placeholder.com/150" alt="Фотография Малики Байгел" width="150" height="150">
+        <h1>Малика Байгел</h1>
+        <p>Веб-разработчик / Студент ИС</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">О себе</a></li>
+            <li><a href="#skills">Навыки</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>О себе</h2>
+            <article>
+                <h3>Биография и образование</h3>
+                <p>Студентка специальности «Информационные системы». Занимаюсь веб-разработкой и проектированием интерфейсов.</p>
+            </article>
+        </section>
+
+        <section id="skills">
+            <h2>Навыки</h2>
+            <ul>
+                <li>HTML5 / CSS3 / JavaScript</li>
+                <li>Git & GitHub</li>
+                <li>Python / Java</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Связаться со мной</h2>
+            <form action="#" method="POST">
+                <div>
+                    <label for="user_name">Ваше имя:</label>
+                    <input type="text" id="user_name" name="user_name" required maxlength="50" placeholder="Введите имя">
+                </div>
+
+                <div>
+                    <label for="user_email">Электронная почта:</label>
+                    <input type="email" id="user_email" name="user_email" required placeholder="example@domain.com">
+                </div>
+
+                <div>
+                    <label for="user_phone">Номер телефона:</label>
+                    <input type="tel" id="user_phone" name="user_phone" required pattern="[0-9+() -]{10,20}" placeholder="+7 (700) 000-00-00">
+                </div>
+
+                <div>
+                    <label for="user_message">Сообщение:</label>
+                    <textarea id="user_message" name="user_message" required maxlength="500" rows="4" placeholder="Введите ваше сообщение..."></textarea>
+                </div>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Малика Байгел. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
