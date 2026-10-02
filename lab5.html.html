@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №5 — Дашборд / Каталог</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+    <!-- Макро-каркас на CSS Grid -->
+    <div class="dashboard-container">
+        
+        <!-- Верхняя панель (Header) -->
+        <header class="dashboard-header">
+            <div class="header-logo">
+                <h2>IT-Dashboard</h2>
+            </div>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html">ЛР1</a></li>
+                    <li><a href="index2.html">ЛР2</a></li>
+                    <li><a href="lab3.html">ЛР3</a></li>
+                    <li><a href="lab5.html" class="active">ЛР5</a></li>
+                </ul>
+            </nav>
+            <div class="header-user">
+                <span>Малика Байгел</span>
+            </div>
+        </header>
+
+        <!-- Боковое меню (Sidebar) -->
+        <aside class="dashboard-sidebar">
+            <nav class="sidebar-menu">
+                <ul>
+                    <li><a href="#">📊 Обзор</a></li>
+                    <li><a href="#">🛍️ Каталог товаров</a></li>
+                    <li><a href="#">📈 Аналитика</a></li>
+                    <li><a href="#">⚙️ Настройки</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Основная область с сеткой карточек (Main Content) -->
+        <main class="dashboard-content">
+            <section class="content-header">
+                <h1>Каталог курсов и проектов</h1>
+                <p>Адаптивная сетка элементов на основе CSS Grid и Flexbox</p>
+            </section>
+
+            <!-- Сетка карточек товаров/курсов -->
+            <div class="card-grid">
+                
+                <article class="card">
+                    <div class="card-body">
+                        <span class="badge">Web</span>
+                        <h3>HTML5 & CSS3 Advanced</h3>
+                        <p>Изучение адаптивной верстки, CSS Grid, Flexbox и современных стандартов W3C.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">Бесплатно</span>
+                        <button class="btn">Подробнее</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-body">
+                        <span class="badge">DevOps</span>
+                        <h3>Git & GitHub Flow</h3>
+                        <p>Управление версиями, ветками, pull request и автоматизация сборок проектов.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">Бесплатно</span>
+                        <button class="btn">Подробнее</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-body">
+                        <span class="badge">Backend</span>
+                        <h3>Python & Flask API</h3>
+                        <p>Проектирование RESTful API, маршрутизация и многопоточное логирование.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">15 000 ₸</span>
+                        <button class="btn">Подробнее</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-body">
+                        <span class="badge">Data</span>
+                        <h3>SQL & Databases</h3>
+                        <p>Создание хранимых процедур, оптимизация запросов и проектирование БД.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">12 000 ₸</span>
+                        <button class="btn">Подробнее</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-body">
+                        <span class="badge">AI / ML</span>
+                        <h3>Machine Learning Basics</h3>
+                        <p>Основы Scikit-learn, TensorFlow, обработки текста и классификации данных.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">20 000 ₸</span>
+                        <button class="btn">Подробнее</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-body">
+                        <span class="badge">Security</span>
+                        <h3>Cybersecurity Fundamentals</h3>
+                        <p>Защита цифровой идентичности, анализ уязвимостей и сетевая безопасность.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">18 000 ₸</span>
+                        <button class="btn">Подробнее</button>
+                    </div>
+                </article>
+
+            </div>
+        </main>
+
+        <!-- Подвал (Footer) -->
+        <footer class="dashboard-footer">
+            <p>&copy; 2026 Малика Байгел. Все права защищены.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
